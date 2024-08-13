@@ -8,42 +8,54 @@ import axios from 'axios';
 import moment from 'moment-timezone';
 
 global.botnumber = ""
+global.confirmCode = ""
 
 global.owner = [
-  ['50672879005', '👑 Mystic - Creador 👑', true],
-  ['50499698072', '💫 Mystic - Collaborator 1 💫', true],
-  ['51940617554', '💫 Mystic - Collaborator 2 💫', true],
+  ['5219992095479', '👑 Mystic - Creador 👑', true],
+  ['50660507320', '💫 Mystic - Collaborator y encargado de la remasterización 💫', true],
   ['51996089079', '💫 Mystic - Collaborator 3 💫', true],
   ['5218442286089', '💫 Mystic - Collaborator 4 💫', true],
   ['50246028932', '💫 Mystic - Collaborator 5 💫', true],
   ['5212412377467', '💫 Mystic - Collaborator 6 💫', true],
-  ['5215533827255', '💫 Mystic - Collaborator 7 💫', false],
+  ['5215517489568', '💫 Mystic - Rey Endymion 💫', false],
   ['59895555511', '💫 Mystic - Collaborator 8 💫', true],
-  ['393518398856','💫 Mystic - Tester Fabri115💫', true],
+  ['573012482597', '💫 Mystic - OfcDiego', true],
+  ['59175655964', '💫 Mystic - By Alba070503 💫', true],
+  ['5493794297363', '💫 Mystic - Gabriel Ofc', true], 
+  ['393518398856', '💫 Mystic - Tester Fabri115💫', true],
+  ['212781160203', '💫 Mystic - Saad 💫', true], 
   ['593968585283'],
-  ['5219993404349'],
-  ['5219991402134'],
   ['5492266466080'],
-  ['5219996125657'],
   ['5218442114446'],
   ['59894808483'],
   ['593980586516'], 
   ['595975740803'],  
   ['5492266613038'],
-  ['50431953376'],
-  ['595992611272']
+  ['50497150165'],
+  ['51906662557'],
+  ['573183650526'], 
+  ['5217441298510'], 
+  ['5217294888993'],
+  ['595992611272'],
+  ['5219992843892'],
+  ['5493795319019'],
+  ['573147616444'], 
+  ['5219991402134'],
+  ['5219996125657'],
+  ['5492215034412'],
+  ['5492964650915']
 ];
 
-global.suittag = ['50672879005'];
-global.prems = ['50672879005'];
+global.suittag = ['60507320'];
+global.prems = ['60507320'];
 
 global.packname = 'Sticker';
-global.author = 'The Mystic - Durl Bot';
-global.wm = 'The Mystic - Durl Bot';
-global.titulowm = 'The Mystic - Durl Bot';
-global.titulowm2 = `The Mystic - Durl Bot`
-global.igfg = 'The Mystic - Durl Bot';
-global.wait = '*[ ⏳ ] Cargando...*';
+global.author = 'The Mystic - Bot Remastered ';
+global.wm = 'The Mystic - Bot Remastered';
+global.titulowm = 'The Mystic - Bot Remastered ';
+global.titulowm2 = `The Mystic - Bot Remastered`
+global.igfg = 'The Mystic - Bot Remastered';
+global.wait = '*_[ ⏳ ] Cargando..._*';
 
 global.imagen1 = fs.readFileSync('./Menu2.jpg');
 global.imagen2 = fs.readFileSync('./src/nuevobot.jpg');
@@ -51,8 +63,12 @@ global.imagen3 = fs.readFileSync('./src/Pre Bot Publi.png');
 global.imagen4 = fs.readFileSync('./Menu.png');
 global.imagen5 = fs.readFileSync('./src/+18.jpg');
 global.imagen6 = fs.readFileSync('./Menu3.png');
+global.imagen7 = fs.readFileSync('./src/menu_pt.png');
+global.imagen8 = fs.readFileSync('./src/menu_fr.png')
+global.imagen9 = fs.readFileSync('./src/menu_en.png')
+global.imagen10 = fs.readFileSync('./src/menu_ru.png')
 
-global.mods = [50672879005];
+global.mods = [];
 
 //* *******Tiempo***************
 global.d = new Date(new Date + 3600000);
@@ -64,14 +80,15 @@ global.año = d.toLocaleDateString('es', {year: 'numeric'});
 global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true});
 //* ****************************
 global.wm2 = `${dia} ${fecha}\nThe Mystic - Bot`;
-global.gt = 'The Mystic - Durl Bot';
-global.mysticbot = 'The Mystic - Durl Bot';
+global.gt = 'The Mystic - Bot Remastered ';
+global.mysticbot = 'The Mystic - Bot Remastered';
+global.channel = 'https://whatsapp.com/channel/0029Vaein6eInlqIsCXpDs3y';
 global.md = 'https://github.com/BrunoSobrino/TheMystic-Bot-MD';
 global.mysticbot = 'https://github.com/BrunoSobrino/TheMystic-Bot-MD';
-global.waitt = '*[ ⏳ ] Cargando...*';
-global.waittt = '*[ ⏳ ] Cargando...*';
-global.waitttt = '*[ ⏳ ] Cargando...*';
-global.nomorown = '5219993404349';
+global.waitt = '*_[ ⏳ ] Cargando..._*';
+global.waittt = '*_[ ⏳ ] Cargando..._*';
+global.waitttt = '*_[ ⏳ ] Cargando..._*';
+global.nomorown = '60507320';
 global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/msword', 'application/pdf', 'text/rtf'];
 global.cmenut = '❖––––––『';
 global.cmenub = '┊✦ ';
